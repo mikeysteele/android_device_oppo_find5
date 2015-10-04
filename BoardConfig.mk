@@ -22,7 +22,7 @@ TARGET_SPECIFIC_HEADER_PATH := device/oppo/find5/include
 TARGET_BOARD_INFO_FILE := device/oppo/find5/board-info.txt
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_x909_defconfig
+#TARGET_KERNEL_CONFIG := cyanogenmod_x909_defconfig
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oppo/find5/bluetooth
@@ -30,8 +30,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oppo/find5/bluetooth
 # Camera
 TARGET_RELEASE_CPPFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 
-# CM  Hardware
-BOARD_HARDWARE_CLASS += device/oppo/find5/cmhw
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
 BOARD_CACHEIMAGE_PARTITION_SIZE := 536870912
@@ -40,5 +38,10 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 10485760
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1073741824
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 
+
 # inherit from the proprietary version
 -include vendor/oppo/find5/BoardConfigVendor.mk
+
+# Recovery
+TARGET_RECOVERY_FSTAB := device/oppo/find5/configs/fstab.find5
+
