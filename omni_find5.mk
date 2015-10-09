@@ -20,20 +20,19 @@
 # Get the prebuilt list of APNs
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
-# Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+# Bootanimation
+TARGET_BOOTANIMATION_SIZE := 960x640
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit from hardware-specific part of the product configuration
-#$(call inherit-product, device/oppo/find5/device.mk)
+$(call inherit-product, device/oppo/find5/full_find5.mk)
 
 PRODUCT_NAME := omni_find5
 PRODUCT_DEVICE := find5
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := Find 5
-PRODUCT_MANUFACTURER := Oppo
+
 
 # Kernel inline build
 TARGET_KERNEL_SOURCE := kernel/oppo/apq8064

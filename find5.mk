@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+
+# Inherit from apq8064-common
+$(call inherit-product, device/oppo/apq8064-common/apq8064.mk)
+
 # overlays
 DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 
@@ -51,5 +55,3 @@ PRODUCT_COPY_FILES += \
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/oppo/find5/find5-vendor.mk)
 
-# Inherit from apq8064-common
-$(call inherit-product, device/oppo/apq8064-common/apq8064.mk)

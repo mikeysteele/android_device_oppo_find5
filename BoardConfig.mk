@@ -20,7 +20,7 @@
 TARGET_SPECIFIC_HEADER_PATH := device/oppo/find5/include
 
 TARGET_BOARD_INFO_FILE := device/oppo/find5/board-info.txt
-
+TARGET_NO_RECOVERY := true
 # Kernel
 #TARGET_KERNEL_CONFIG := cyanogenmod_x909_defconfig
 
