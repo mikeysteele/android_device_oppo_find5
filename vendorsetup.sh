@@ -14,5 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo full_find5-userdebug
 add_lunch_combo omni_find5-userdebug
+add_lunch_combo omni_find5-eng

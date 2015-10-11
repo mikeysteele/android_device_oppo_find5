@@ -20,9 +20,6 @@
 # Get the prebuilt list of APNs
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
-# Bootanimation
-TARGET_BOOTANIMATION_SIZE := 960x640
-
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
