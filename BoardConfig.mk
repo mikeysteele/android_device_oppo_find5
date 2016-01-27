@@ -17,7 +17,7 @@
 # inherit from APQ8064 common
 -include device/oppo/apq8064-common/BoardConfigCommon.mk
 
-TARGET_SPECIFIC_HEADER_PATH := device/oppo/find5/include
+TARGET_SPECIFIC_HEADER_PATH += device/oppo/find5/include
 
 TARGET_BOARD_INFO_FILE := device/oppo/find5/board-info.txt
 
