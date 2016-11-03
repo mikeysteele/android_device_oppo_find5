@@ -17,6 +17,10 @@
 # overlays
 DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+	hci_qcomm_init
+	
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8960
