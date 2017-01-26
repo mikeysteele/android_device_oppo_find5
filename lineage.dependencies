@@ -14,18 +14,6 @@
  },
  {
    "remote": "github",
-   "repository": "LineageOS/android_device_oppo_common",
-   "target_path": "device/oppo/common",
-   "branch": "cm-13.0"
- },
- {
-   "remote": "github",
-   "repository": "LineageOS/android_device_qcom_common",
-   "target_path": "device/qcom/common",
-   "branch": "cm-13.0"
- },
- {
-   "remote": "github",
    "repository": "TheMuppets/proprietary_vendor_oppo",
    "target_path": "vendor/oppo",
    "branch": "cm-13.0"
